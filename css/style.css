@@ -1,0 +1,176 @@
+:root {
+  --color-brand-dark: #011c44;
+  --color-brand-light: #2b7fff;
+  --color-white: #ffffff;
+  --color-secondary-dark: #4a4a4a;
+  --color-secondary-light: #747272;
+  --color-secondary-blue: #011f4a;
+  --color-secondary-yellow: #ffd02b;
+}
+
+/* roboto-*/
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+/* play-*/
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* play-700  */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  font-size: inherit;
+}
+a {
+  display: inline-block;
+}
+/* global */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.72;
+  font-weight: 400;
+  color: var(--color-brand-dark);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+address {
+  font-style: normal;
+}
+.button {
+  font-size: 18px;
+  color: var(--color-white);
+  line-height: 1.17;
+  background-color: var(--color-brand-light);
+  text-align: center;
+}
+/* header */
+.header {
+  font-size: 18px;
+  line-height: 1.17;
+  font-weight: 600;
+}
+.link {
+  text-decoration: none;
+  color: var(--color-brand-dark);
+}
+.link:hover {
+  color: var(--color-brand-light);
+}
+.section-title {
+  font-weight: 700;
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  line-height: 1.15;
+  text-align: center;
+}
+.accent {
+  color: var(--color-brand-light);
+}
+.section-title.left {
+  text-align: left;
+}
+.section-title.left .accent {
+  text-transform: capitalize;
+}
+/* hero-section */
+.hero-title {
+  font-family: "Play", serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.81;
+  text-transform: capitalize;
+}
+.hero-text {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.hero-small {
+  font-size: 18px;
+  line-height: 1.17;
+  color: var(--color-secondary-dark);
+}
+/* advantages-section */
+.advantages-text{
+  font-size: 18px;
+  line-height: 1.33;
+  color: #000;
+}
+
+/* procedures-section */
+.procedures-title{
+  color: var(--color-white);
+  line-height: 1.18;
+  text-align: center;
+}
+/* address-section */
+.adress-confidense{
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--color-secondary-light);
+}
+.adress-confidense a{
+  color: var(--color-secondary-light);
+}
+/* footer */
+.footer {
+  background-image: url(../img/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-brand-dark);
+}
+.footer-link {
+  font-size: 16px;
+  color: var(--color-white);
+}
+.adress-copyright {
+  font-size: 13px;
+  color: var(--color-secondary-light);
+}
